@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🏆 Score Tracker Pro 🏆</h1>
+        <p>Keep track of every point, every game, every victory!</p>
+    </header>
+    
+    <h2>Welcome to Score Tracker Pro!</h2>
+    <p>Your ultimate companion for tracking scores in any game.</p>
+        <div class="box">
+            <div>
+                <h3>Home</h3>
+                <div class="score-box">
+                    <p>Score: <span id="team1-score">0</span></p>
+                </div>
+                <div class="scores-box">
+                    <button class="button" onclick="incrementScore1by1()">+1</button>
+                    <button class="button" onclick="incrementScore1by2()">+2</button>
+                    <button class="button" onclick="incrementScore1by3()">+3</button>
+                </div>
+            </div>
+            <div>
+            <div class="reset">
+                <button class="button" onclick="resetScores()">Reset Scores</button>    
+            </div>
+            
+                <h3>Guest</h3>
+                <div class="score-box">
+                    <p>Score: <span id="team2-score">0</span></p>
+                </div>
+                <div class="scores-box">
+                    <button class="button" onclick="incrementScore2by1()">+1</button>
+                    <button class="button" onclick="incrementScore2by2()">+2</button>
+                    <button class="button" onclick="incrementScore2by3()">+3</button>
+                </div>
+            </div>
+        </div>
+    
+    <footer>
+        <p>&copy; 2025 Score Tracker Pro. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

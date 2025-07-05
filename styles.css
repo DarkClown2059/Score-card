@@ -1,0 +1,188 @@
+@font-face {
+    font-family: digital;
+    src: url("/digital-7 (italic).ttf");
+}
+
+
+body {
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    text-align: center; 
+    background: linear-gradient(to right, #a6e871, #b2ebf2); 
+}
+header{
+    background: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW41aWlha25zYXBiaXI0ejF1N29pZzMxdGxwMWxhMzo3OWczbGx2aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3DrHrnC0JMotPiopno/giphy.gif");
+    background-size: cover;
+    height: 40vh;
+    min-height: 300px;
+    max-height: 600px;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 40vh;
+        min-height: 250px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    .box {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+    
+    .button {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        margin: 10px 6px;
+        min-width: 80px;
+        min-height: 56px;
+    }
+    
+    .score-box {
+        margin: 15px 0;
+        padding: 20px;
+    }
+    
+    .score-box p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 35vh;
+        min-height: 200px;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    header p {
+        font-size: 0.9rem;
+    }
+    
+    .button {
+        padding: 18px 35px;
+        font-size: 1.3rem;
+        margin: 12px 8px;
+        min-width: 90px;
+        min-height: 60px;
+        border-radius: 8px;
+    }
+    
+    .box {
+        gap: 40px;
+        padding: 40px 15px;
+    }
+    
+    .score-box {
+        margin: 20px 0;
+        padding: 25px;
+    }
+    
+    .score-box p {
+        font-size: 2.2rem;
+    }
+}
+body h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+body p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.box {
+    background-color: #0066FF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(43, 104, 108, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    color: whitesmoke;
+}
+.score-box {
+    font-family: digital, sans-serif;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(43, 104, 108, 0.1);
+    padding: 15px;
+    text-align: center;
+    min-width: 120px;
+    white-space: nowrap;
+}
+.score-box p {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+    color: #00796b;
+    white-space: nowrap;
+    font-size:xx-large;
+}
+.button {
+    font-family: digital, sans-serif;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin: 8px 4px;
+    min-width: 60px;
+    min-height: 48px;
+    touch-action: manipulation;
+    user-select: none;
+}
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+.button:active {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(0.95);
+}
+footer {
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
